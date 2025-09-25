@@ -1,47 +1,119 @@
+HTML:
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/menu.css">
-    <title>Menu</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../CSS/menu.css" />
+  <title>Menú - Cafetería</title>
 </head>
 <body>
-    <div class="container-header">
-        <header>
-            <div class="logo">
-                <a href="#"> ☕ Coffe</a>
-            </div>
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">☕ Café</a>
+      </div>
 
-            <nav class="nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./html/Menu.html">Menu</a></li>
-                    <li><a href="./html/Galeria.html">Galeria</a></li>
-                    <li><a href="./html/Contactenos.html">Contactenos</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-<section id="our-menu" class="our-menu">
-    <div class="title-menu">
-        <h1>OUR MENU</h1>
-        <div class="linea"></div>
-    </div>
-    <div class="img-menu">
-        <img src="../img/hot-beverages.png" alt="taza-coffe">
-        <h3>Hot beverages</h3>
-        <p>Wide range of steaming hot <br> coffe to make you fresh and light.</p>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./menu.html" class="activo">Menú</a></li>
+          <li><a href="./galeria.html">Galería</a></li>
+          <li><a href="./contactenos.html">Contáctenos</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-        <img src="../img/cold-beverages.png" alt="coffe-cold">
-        <h3>Cold beverages</h3>
-        <p>Creamy and frothy cold coffe to <br> make you cool.</p>
+  <section class="menu" id="menu">
+    <h2 class="titulo-menu">Nuestro Menú</h2>
+    <div class="subrayado"></div>
 
-        <img src="../img/refreshment.png" alt="refreshment">
-        <h3>Refreshment</h3>
-        <p>Fruit and icy refreshing drink to <br> make feel refresh.</p>
+    <div class="contenedor-menu">
+      <article class="card">
+        <div class="card-media">
+          <img src="../IMG/hot-beverages.png" alt="Bebidas calientes">
+        </div>
+        <div class="card-body">
+          <h3>Bebidas Calientes</h3>
+          <p>Amplia variedad de cafés calientes al vapor para hacerte sentir fresco y ligero.</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Comprar</a>
+            <a class="btn btn-outline" href="#">Más detalles</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="../IMG/cold-beverages.png" alt="Bebidas frías">
+        </div>
+        <div class="card-body">
+          <h3>Bebidas Frías</h3>
+          <p>Cremoso y espumoso café frío para hacerte sentir fresco.</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Comprar</a>
+            <a class="btn btn-outline" href="#">Más detalles</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="../IMG/refreshment.png" alt="Refrescos">
+        </div>
+        <div class="card-body">
+          <h3>Refrescos</h3>
+          <p>Bebida refrescante con frutas y hielo para sentir renovación.</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Comprar</a>
+            <a class="btn btn-outline" href="#">Más detalles</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="../IMG/special-combo.png" alt="Combos especiales">
+        </div>
+        <div class="card-body">
+          <h3>Combos Especiales</h3>
+          <p>La mejor combinación de sabor, rapidez y precio.</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Comprar</a>
+            <a class="btn btn-outline" href="#">Más detalles</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="../IMG/burger-frenchfries.png" alt="Comidas rápidas">
+        </div>
+        <div class="card-body">
+          <h3>Comidas Rápidas</h3>
+          <p>Hamburguesas, pizzas y snacks listos en minutos para disfrutar al instante.</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Comprar</a>
+            <a class="btn btn-outline" href="#">Más detalles</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card-center">
+        <div class="card-media">
+          <img src="../IMG/desserts.png" alt="Postres">
+        </div>
+        <div class="card-body">
+          <h3>Postres</h3>
+          <p>Postres dulces y deliciosos para endulzar cada momento.</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Comprar</a>
+            <a class="btn btn-outline" href="#">Más detalles</a>
+          </div>
+        </div>
+      </article>
     </div>
-</section>
-    
+  </section>
 </body>
 </html>
