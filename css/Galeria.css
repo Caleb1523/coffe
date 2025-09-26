@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(#fff , rgba(94, 91, 91, 0.771))
+}
+
+.contenedor-header {
+    background: #3b141c;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.contenedor-header header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* logo izq - menú der */
+    align-items: center;
+    padding: 10px 15px;
+}
+
+/* Logo */
+.contenedor-header header .logo a {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Menú */
+.contenedor-header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-header nav ul li {
+    margin: 0 20px;
+}
+
+.contenedor-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 12px 16px;
+    border-radius: 25px;
+}
+
+.contenedor-header nav ul li a:hover {
+    color: #030303;
+    background-color: #e67600;
+    transform: scale(1.1);
+}
+
+/*inicio*/
+
+.inicio {
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 40px;
+    display: flex;
+}
+
+.inicio .titulo {
+    text-align: center;
+    font-size: 40px;
+}
+.inicio .linea{
+ background-color: #e67600;
+ width: 120px;
+ height: 10px;
+ margin: -20px auto 40px;
+ border-radius: 50px;
+}
+.inicio .carta {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.inicio .carta .imagen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+.inicio .carta .imagen img{
+    max-height: 200px;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}

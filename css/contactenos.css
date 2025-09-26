@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(#fff , rgba(94, 91, 91, 0.771))
+}
+
+.container-header {
+    background: #3b141c;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.container-header header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* logo izq - menú der */
+    align-items: center;
+    padding: 10px 15px;
+}
+
+/* Logo */
+.container-header header .logo a {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Menú */
+.container-header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-header nav ul li {
+    margin: 0 20px;
+}
+
+.container-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 12px 16px;
+    border-radius: 25px;
+}
+
+.container-header nav ul li a:hover {
+    color: #030303;
+    background-color: #e67600;
+    transform: scale(1.1);
+}
+
+.inicio {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio .title {
+    font-size: 40px;
+}
+
+.inicio .linea {
+    background-color: #e67600;
+    height: 5px;
+    width: 80px;
+    border-radius: 50px;
+    margin-top: -10px;
+}
+
+.inicio .form-contac {
+    margin-right:500px;
+    margin-top: 80px;
+}
+
+.inicio .form {
+    flex-direction: column;
+    display: flex;
+    margin-left: 500px;
+    gap: 10px;
+    margin-top: -170px;
+}
+
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    border: none;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+}
+
